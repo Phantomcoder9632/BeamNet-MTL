@@ -1,0 +1,39 @@
+# --- Python Environment ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints
+.Python
+env/
+venv/
+.venv/
+build/
+dist/
+
+# --- Datasets (Large Radio Physics Data) ---
+# We ignore raw CSVs and NumPy extracts to keep the repo lightweight
+Dataset/*.csv
+Dataset/*.npy
+Dataset/*.pkl
+Dataset/o1_60/
+
+# --- Models (Binary Artifacts) ---
+Models/*.keras
+Models/*.h5
+Models/*.tflite
+Models/*.json
+
+# --- Logs & Results ---
+Output_plots/*.txt
+latency_results.txt
+*.log
+
+# --- User Specific Exclusions ---
+Project_Report.md
+
+# --- IDEs & System Files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

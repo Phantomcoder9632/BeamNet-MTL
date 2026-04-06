@@ -1,0 +1,144 @@
+PS D:\5G_project> python .\Codes\step_0_baseline.py
+2026-03-15 21:51:14.337427: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-03-15 21:51:18.628039: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+===========================================
+⚠️ CUDA not detected. Falling back to CPU.
+===========================================
+
+📂 Loading dataset from Dataset/synthetic_5g_users.csv...
+✂️ Splitting data into Training (80%) and Testing (20%) sets...
+💾 Saved training data to: Dataset/Step0_train_data.csv
+💾 Saved testing data to: Dataset/Step0_test_data.csv
+
+🧠 Preparing features (X, Y) and labels (Target Beam) for the AI...
+⚙️ Building the Neural Network...
+C:\Users\itzbb\anaconda3\Lib\site-packages\keras\src\layers\core\dense.py:92: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+2026-03-15 21:51:19.944283: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+🚀 Training the AI on local hardware...
+Epoch 1/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 1s 8ms/step - accuracy: 0.1075 - loss: 6.1375 - val_accuracy: 0.1800 - val_loss: 3.1669
+Epoch 2/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.2713 - loss: 2.3918 - val_accuracy: 0.3450 - val_loss: 2.1619
+Epoch 3/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.3625 - loss: 1.8954 - val_accuracy: 0.3100 - val_loss: 1.9658
+Epoch 4/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.4338 - loss: 1.7191 - val_accuracy: 0.3750 - val_loss: 1.7928
+Epoch 5/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.4338 - loss: 1.6480 - val_accuracy: 0.4650 - val_loss: 1.5612
+Epoch 6/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.4812 - loss: 1.4917 - val_accuracy: 0.4750 - val_loss: 1.4845
+Epoch 7/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.4963 - loss: 1.4593 - val_accuracy: 0.4050 - val_loss: 1.6830
+Epoch 8/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.4762 - loss: 1.4336 - val_accuracy: 0.4900 - val_loss: 1.3726
+Epoch 9/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.5038 - loss: 1.3742 - val_accuracy: 0.5100 - val_loss: 1.3847
+Epoch 10/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.5125 - loss: 1.3376 - val_accuracy: 0.4400 - val_loss: 1.4343
+Epoch 11/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.5525 - loss: 1.2742 - val_accuracy: 0.4600 - val_loss: 1.3487
+Epoch 12/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.5813 - loss: 1.2247 - val_accuracy: 0.5850 - val_loss: 1.3509
+Epoch 13/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.5638 - loss: 1.1990 - val_accuracy: 0.5350 - val_loss: 1.3015
+Epoch 14/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.5788 - loss: 1.1516 - val_accuracy: 0.6400 - val_loss: 1.0770
+Epoch 15/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6100 - loss: 1.1013 - val_accuracy: 0.6050 - val_loss: 1.1978
+Epoch 16/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6225 - loss: 1.0885 - val_accuracy: 0.5700 - val_loss: 1.1710
+Epoch 17/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6100 - loss: 1.0540 - val_accuracy: 0.4450 - val_loss: 1.5603
+Epoch 18/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6000 - loss: 1.0730 - val_accuracy: 0.6000 - val_loss: 1.0448
+Epoch 19/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6413 - loss: 0.9787 - val_accuracy: 0.6200 - val_loss: 1.0212
+Epoch 20/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6400 - loss: 0.9968 - val_accuracy: 0.6850 - val_loss: 0.9387
+Epoch 21/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6662 - loss: 1.0015 - val_accuracy: 0.5350 - val_loss: 1.1720
+Epoch 22/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6325 - loss: 0.9794 - val_accuracy: 0.6750 - val_loss: 0.9294
+Epoch 23/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6712 - loss: 0.9142 - val_accuracy: 0.6950 - val_loss: 0.9163
+Epoch 24/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6388 - loss: 0.9202 - val_accuracy: 0.6400 - val_loss: 0.9386
+Epoch 25/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6812 - loss: 0.8946 - val_accuracy: 0.6800 - val_loss: 0.8245
+Epoch 26/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7063 - loss: 0.8428 - val_accuracy: 0.6700 - val_loss: 0.8683
+Epoch 27/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7412 - loss: 0.7944 - val_accuracy: 0.7400 - val_loss: 0.8910
+Epoch 28/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7088 - loss: 0.8390 - val_accuracy: 0.6400 - val_loss: 1.0372
+Epoch 29/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6975 - loss: 0.8574 - val_accuracy: 0.7200 - val_loss: 0.8230
+Epoch 30/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7350 - loss: 0.7970 - val_accuracy: 0.6900 - val_loss: 0.9961
+Epoch 31/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - accuracy: 0.7013 - loss: 0.7889 - val_accuracy: 0.6950 - val_loss: 0.9472
+Epoch 32/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7525 - loss: 0.7643 - val_accuracy: 0.6950 - val_loss: 0.7743
+Epoch 33/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7225 - loss: 0.7622 - val_accuracy: 0.6950 - val_loss: 0.8825
+Epoch 34/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7150 - loss: 0.7723 - val_accuracy: 0.6650 - val_loss: 0.7940
+Epoch 35/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7625 - loss: 0.6839 - val_accuracy: 0.7200 - val_loss: 0.7422
+Epoch 36/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7588 - loss: 0.6911 - val_accuracy: 0.7200 - val_loss: 0.7569
+Epoch 37/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7400 - loss: 0.6895 - val_accuracy: 0.7550 - val_loss: 0.7120
+Epoch 38/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7538 - loss: 0.7314 - val_accuracy: 0.6150 - val_loss: 0.8632
+Epoch 39/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7375 - loss: 0.7144 - val_accuracy: 0.6750 - val_loss: 0.8612
+Epoch 40/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7575 - loss: 0.6724 - val_accuracy: 0.6800 - val_loss: 0.8556
+Epoch 41/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7550 - loss: 0.7158 - val_accuracy: 0.6700 - val_loss: 0.7765
+Epoch 42/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7550 - loss: 0.6644 - val_accuracy: 0.7300 - val_loss: 0.6971
+Epoch 43/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7575 - loss: 0.6689 - val_accuracy: 0.6350 - val_loss: 0.8214
+Epoch 44/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7550 - loss: 0.6400 - val_accuracy: 0.6550 - val_loss: 0.8426
+Epoch 45/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7575 - loss: 0.6546 - val_accuracy: 0.6900 - val_loss: 0.7989
+Epoch 46/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7625 - loss: 0.6785 - val_accuracy: 0.7050 - val_loss: 1.0046
+Epoch 47/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7675 - loss: 0.6622 - val_accuracy: 0.7500 - val_loss: 0.6666
+Epoch 48/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - accuracy: 0.7887 - loss: 0.6140 - val_accuracy: 0.7200 - val_loss: 0.7119
+Epoch 49/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - accuracy: 0.7650 - loss: 0.6352 - val_accuracy: 0.6850 - val_loss: 0.7752
+Epoch 50/50
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7788 - loss: 0.5950 - val_accuracy: 0.7300 - val_loss: 0.6758
+
+🎯 Final Test Accuracy: 73.00%
+
+📦 Saving the trained model...
+✅ Model successfully saved to: Models/step_0_baseline_model.keras
+PS D:\5G_project> python .\Codes\step_0_test.py    
+2026-03-15 21:54:01.899759: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-03-15 21:54:05.710071: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+===========================================
+📡 INITIALIZING AI INFERENCE PIPELINE
+===========================================
+
+📂 Loading test dataset: D:\5G_project\Dataset\Step0_test_data.csv
+🧠 Loading trained AI model: D:\5G_project\Models\step_0_baseline_model.keras
+2026-03-15 21:54:06.603783: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+🚀 Asking AI to predict Beam IDs...
+7/7 ━━━━━━━━━━━━━━━━━━━━ 0s 6ms/step 
+
+🎯 Independent Test Accuracy: 73.00%
+
+📊 Generating Side-by-Side Comparison Plot...
+✅ Visual comparison saved to: D:\5G_project\Output_plots\step_0_predictions_comparison.png
+PS D:\5G_project> 
