@@ -45,9 +45,18 @@ We stand on the shoulders of giants, while overcoming their specific technical b
 ---
 
 ## 📻 Dataset: DeepMIMO v4.0.0 (O1_60)
-The model was trained on the **O1_60 Urban Scenario**, a professional-grade 3D ray-tracing model of a city environment.
-*   **Physics Fix**: We utilized **1024 OFDM subcarriers** to ensure a wide enough Symbol Duration to capture deep urban multipath delays, preventing signal clipping.
-*   **Coordinate Merging**: Unified three separate receiver grids into a single coherent geospatial coordinate system.
+This project utilizes the **DeepMIMO framework**, a highly realistic 3D ray-tracing dataset generator built on accurate electromagnetic simulations. Instead of relying on simplistic statistical noise models, DeepMIMO captures precise physical wave propagation, including multi-bounce reflections, diffractions, and scattering.
+
+### The O1_60 Urban Environment
+We configured the model using the **O1_60 scenario**, which simulates a dense outdoor city street block operating at the 60 GHz mmWave band. This environment is notoriously difficult for traditional signal processing because it is filled with complex **Line-of-Sight (LoS)** and **Non-Line-of-Sight (NLOS)** "shadow zones" caused by blocking buildings and urban geometry.
+
+### Data Structure & Feature Engineering
+To make this dataset viable for deep learning, we engineered a specific data pipeline:
+
+1.  **The Input (Features)**: The model ingests raw Channel State Information (CSI). Specifically, we extract the In-phase (I) and Quadrature (Q) components from a 64-antenna base station array. This yields a 128-dimensional input vector per user, serving as a unique "radio fingerprint" of their location.
+2.  **The Targets (Labels)**: The dataset maps every radio fingerprint to two specific targets: the user's physical [X, Y] geospatial coordinates (in meters) and the optimal Beam ID (0 to 63).
+3.  **Physics Fix (OFDM Configuration)**: We scaled the dataset to use **1024 OFDM subcarriers**. This ensured the temporal window (Symbol Duration) was wide enough to capture deep urban multipath delays without experiencing critical signal clipping (the "All Zeros" error).
+4.  **Geospatial Merging**: We extracted and unified tens of thousands of discrete User Equipment (UE) data points across three separate receiver grids (RX_1, RX_2, RX_3) into a single, continuous coordinate map for the AI to navigate.
 
 ---
 
@@ -118,4 +127,4 @@ If you use this research or code in your own work, please cite it as:
 ```
 
 ---
-*Developed with compation for the 5G Advanced Research Community.*
+*Developed with passion for the 5G Advanced Research Community.*
